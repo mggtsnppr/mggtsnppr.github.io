@@ -3,11 +3,20 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>D&D Character Creation and Management</title>
-  <script src="js/backbone.js"></script>
-  <script src="js/underscore.js"></script>
   <script src="js/jquery-2.1.1.js"></script>
+  <script src="js/underscore.js"></script>
+  <script src="js/backbone.js"></script>
+
+  <script src="js/dnd/app.js"></script>
 </head>
 <body>
 
+  <script>
+    var dndApp;
+    $(document).ready(function() {
+      dndApp = new AppRouter();
+      Backbone.history.start();
+    });
+  </script>
 </body>
 </html>
