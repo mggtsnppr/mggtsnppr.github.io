@@ -12,7 +12,7 @@ var AppRouter = Backbone.Router.extend({
     "character/remove/:id": 'remove',
     "character/:id": 'character'
   },
-  charlist: function() {
+  charList: function() {
     console.log('charlist');
   },
   character: function(id) {
