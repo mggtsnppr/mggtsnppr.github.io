@@ -3,13 +3,24 @@
 <head lang="en">
   <meta charset="UTF-8">
   <title>D&D Character Creation and Management</title>
+</head>
+<body>
+  <div id="main-frame">
+    <a class="js-create-character-link" href="#">Create new character</a>
+    <ul class="js-character-list"></ul>
+  </div>
+
+  <script type="text/template" id="character-list-item-template">
+    <%= name %>: <%= state %>
+  </script>
+
   <script src="js/jquery-2.1.1.js"></script>
   <script src="js/underscore.js"></script>
   <script src="js/backbone.js"></script>
+  <script src="js/backbone.localStorage.js"></script>
 
   <script src="js/dnd/app.js"></script>
-</head>
-<body>
+  <script src="js/dnd/character.js"></script>
 
   <script>
     var dndApp;
